@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/txtCedulaSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Cedula a buscar"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignBottom="@+id/btnBuscar"
+        android:layout_toLeftOf="@+id/btnBuscar"
+        android:layout_toStartOf="@+id/btnBuscar" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_below="@+id/btnBuscar"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/labelID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Valor"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp" />
+
+    <TextView
+        android:id="@+id/labelValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignLeft="@+id/labelID"
+        android:layout_alignStart="@+id/labelID"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Descr"
+        android:layout_below="@+id/textView8"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/labelDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toEndOf="@+id/labelValor"
+        android:layout_toRightOf="@+id/labelValor"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="24dp"
+        android:text="Fecha" />
+
+    <TextView
+        android:id="@+id/labelFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toEndOf="@+id/labelDesc"
+        android:layout_toRightOf="@+id/labelDesc"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="19dp"
+        android:text="Estado" />
+
+    <TextView
+        android:id="@+id/labelEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelFecha"
+        android:layout_alignStart="@+id/labelFecha"
+        android:layout_alignTop="@+id/textView14"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Placa"
+        android:layout_below="@+id/textView14"
+        android:layout_toLeftOf="@+id/labelID"
+        android:layout_toStartOf="@+id/labelID" />
+
+    <TextView
+        android:id="@+id/labelPlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelEstado"
+        android:layout_alignStart="@+id/labelEstado"
+        android:layout_alignTop="@+id/textView16"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="17dp"
+        android:text="Modelo" />
+
+    <TextView
+        android:id="@+id/labelModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/labelPlaca"
+        android:layout_toRightOf="@+id/labelPlaca"
+        android:text="" />
+
+</RelativeLayout>
